@@ -37,6 +37,7 @@
   }
 }
 
+
 .gap {
   display: flex;
   gap: 2rem;
@@ -47,4 +48,14 @@
   flex-direction: column;
   align-items: end;
   gap: 1rem;
+}
+
+.li {
+  padding: 36px 20px;
+  align-items: center;
+  transform: skew(-20deg);
+}
+
+.li:hover {
+    background-color: green;
 }

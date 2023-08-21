@@ -57,5 +57,13 @@
 }
 
 .li:hover {
-    background-color: green;
+    background-color: black;
+}
+
+.img {
+  width: 200px;
+  transform: skew(-15deg);
+  border-radius: 8px;
+  background-color: black;
+  opacity: 90%;
 }

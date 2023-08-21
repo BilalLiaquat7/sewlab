@@ -32,21 +32,24 @@ export default function Navbar() {
         alt=""
         style={{ width: 200, height: 60 }}
       />
-      <ul className="hidden md:flex justify-end " style={{ alignItems: 'center'}}>
-        <li className="cursor-pointer hover:bg-slate-500 li" >
-          <a href="#shah" style={{padding: '4px', textDecoration: 'none' }} >HOME</a>
+      <ul
+        className="hidden md:flex justify-end "
+        style={{ alignItems: "center" }}
+      >
+        <li className="cursor-pointer hover:text-white li">
+          <a href="#shah">HOME</a>
         </li>
-        <li className="cursor-pointer hover:text-pink-600 li">
-           <a href="#shah" >ABOUT US</a>
+        <li className="cursor-pointer hover:text-white li">
+          <a href="#shah">ABOUT US</a>
         </li>
-        <li className="cursor-pointer  hover:text-pink-600 li" >
-          <a href="#shah" >CLIENTS</a>
+        <li className="cursor-pointer  hover:text-white li">
+          <a href="#shah">CLIENTS</a>
         </li>
-        <li className="cursor-pointer hover:text-pink-600 li" >
-          <a href="#shah" >SERVICES</a>
+        <li className="cursor-pointer hover:text-white li">
+          <a href="#shah">SERVICES</a>
         </li>
-        <li className="cursor-pointer  hover:text-pink-600 li">
-          <a href="#shah" >CONTACT</a>
+        <li className="cursor-pointer  hover:text-white li">
+          <a href="#shah">CONTACT</a>
         </li>
       </ul>
 
@@ -56,7 +59,7 @@ export default function Navbar() {
       <div
         className={
           !nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#103C41] ease-in-out duration-500 z-30"
+            ? "fixed left-0 top-0 w-[25%] h-full border-r border-r-gray-900 bg-[#103C41] ease-in-out duration-500 z-30"
             : "fixed left-[-100%]"
         }
       >
@@ -67,23 +70,23 @@ export default function Navbar() {
           style={{ width: 150, height: 50 }}
         />
         <ul className="p-4 text-white uppercase">
-          <li className=" p-4 cursor-pointer hover:text-pink-600 border-b border-gray-300">
+          <li className=" p-4 cursor-pointer hover:text-black border-b border-gray-300">
             {/* <Link to="/">Home</Link> */}
             HOME
           </li>
-          <li className="p-4 cursor-pointer hover:text-pink-600 border-b border-gray-300">
+          <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
             {/* <Link to="/about">Company</Link> */}
             ABOUT US
           </li>
-          <li className="p-4 cursor-pointer  hover:text-pink-600 border-b border-gray-300">
+          <li className="p-4 cursor-pointer  hover:text-black border-b border-gray-300">
             {/* <Link to="/catalogue">Resources</Link> */}
             CLIENTS
           </li>
-          <li className="p-4 cursor-pointer hover:text-pink-600 border-b border-gray-300">
+          <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
             {/* <Link to="/contact-us">About</Link> */}
             SERVICES
           </li>
-          <li className="p-4 cursor-pointer  hover:text-pink-600 border-b border-gray-300">
+          <li className="p-4 cursor-pointer  hover:text-black border-b border-gray-300">
             {/* <Link to="/contact-us">Contact</Link> */}
             CONTACT
           </li>

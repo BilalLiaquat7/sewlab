@@ -4,6 +4,21 @@ import logo from "../assets/logo.png";
 import logoNav from "../assets/logoNav.png";
 export default function Navbar() {
   const [nav, setNav] = useState(false);
+  // const [isHover, setIsHover] = useState(false);
+
+  //  const handleMouseEnter = () => {
+  //     setIsHover(true);
+  //  };
+  //  const handleMouseLeave = () => {
+  //     setIsHover(false);
+  //  };
+
+  // const menuHover = {
+  //   backgroundColor: isHover ? 'green' : '',
+  //   padding: '36px 20px',
+  //   alignItems: 'center',
+  //   transform: 'skew(-20deg)'
+  // }
 
   const handleNav = () => {
     setNav(!nav);
@@ -17,26 +32,21 @@ export default function Navbar() {
         alt=""
         style={{ width: 200, height: 60 }}
       />
-      <ul className="hidden md:flex space-x-12 justify-end ">
-        <li className="cursor-pointer hover:bg-slate-500">
-          {/* <Link to="/">Home</Link> */}
-          HOME
+      <ul className="hidden md:flex justify-end " style={{ alignItems: 'center'}}>
+        <li className="cursor-pointer hover:bg-slate-500 li" >
+          <a href="#shah" style={{padding: '4px', textDecoration: 'none' }} >HOME</a>
         </li>
-        <li className="cursor-pointer hover:text-pink-600">
-          {/* <Link to="/about">Company</Link> */}
-          ABOUT US
+        <li className="cursor-pointer hover:text-pink-600 li">
+           <a href="#shah" >ABOUT US</a>
         </li>
-        <li className="cursor-pointer  hover:text-pink-600">
-          {/* <Link to="/catalogue">Resources</Link> */}
-          CLIENTS
+        <li className="cursor-pointer  hover:text-pink-600 li" >
+          <a href="#shah" >CLIENTS</a>
         </li>
-        <li className="cursor-pointer hover:text-pink-600">
-          {/* <Link to="/contact-us">About</Link> */}
-          SERVICES
+        <li className="cursor-pointer hover:text-pink-600 li" >
+          <a href="#shah" >SERVICES</a>
         </li>
-        <li className="cursor-pointer  hover:text-pink-600">
-          {/* <Link to="/contact-us">Contact</Link> */}
-          CONTACT
+        <li className="cursor-pointer  hover:text-pink-600 li">
+          <a href="#shah" >CONTACT</a>
         </li>
       </ul>
 

@@ -15,11 +15,17 @@ export default function Hero() {
         alt="Sew Machine"
         style={{ height: "85vh", width: "100%" }}
       />
-      <div className="gap flex-col absolute bottom-1/3 px-80 py-36 w-full items-end justify-end text-end">
+      <div className="gap flex-col absolute bottom-1/3 pr-16 md:pr-16 lg:px-80 lg:py-36 w-full items-end justify-end text-end">
         <div className="textGap">
-          <h1 class="text-white font-semibold text-4xl">QUALITY.</h1>
-          <h1 class="text-white font-semibold text-4xl">CONSISTENCY.</h1>
-          <h1 class="text-white font-semibold text-4xl">CUSTOMER SERVICE.</h1>
+          <h1 class="text-white font-semibold text-2xl md:text-4xl">
+            QUALITY.
+          </h1>
+          <h1 class="text-white font-semibold text-2xl md:text-4xl">
+            CONSISTENCY.
+          </h1>
+          <h1 class="text-white font-semibold text-2xl md:text-4xl">
+            CUSTOMER SERVICE.
+          </h1>
         </div>
         <button
           style={{ width: "fit-content" }}
@@ -28,29 +34,37 @@ export default function Hero() {
           LOGIN
         </button>
       </div>
-      <div className="gap flex absolute -bottom-40 px-96 py-48 items-end">
-        <div className="relative img hover:border-4">
+      <div className="gap flex-col sm:absolute md:flex-row md:absolute lg:absolute lg:-bottom-40 lg:px-96 lg:py-48 items-end ">
+        <div className="relative img hover:scale-105 duration-300">
           <img className="rounded-md" src={buttons} alt="" />
-          <div class=" rounded-md absolute bottom-0 px-4 py-1 bg-gray-500/80 w-full">
-            <h1 class="text-white font-semibold text-xl">Headwear</h1>
+          <div class=" rounded-md absolute bottom-0 bg-gray-500/80 w-full">
+            <h1 class="text-white font-semibold py-1 lg:py-0 text-3xl sm:text-lg md:text-lg lg:text-lg">
+              Headwear
+            </h1>
           </div>
         </div>
-        <div className="relative img hover:border-4">
+        <div className="relative img hover:scale-105 duration-300">
           <img className="rounded-md" src={camera} alt="" />
-          <div class=" rounded-md absolute bottom-0 px-4 py-1 bg-gray-500/80 w-full">
-            <h1 class="text-white font-semibold text-xl">Apparel</h1>
+          <div class=" rounded-md absolute bottom-0 bg-gray-500/80 w-full">
+            <h1 class="text-white font-semibold py-1 lg:py-0 text-3xl sm:text-lg md:text-lg lg:text-lg">
+              Apparel
+            </h1>
           </div>
         </div>
-        <div className="relative img hover:border-4">
+        <div className="relative img hover:scale-105 duration-300">
           <img className="rounded-md" src={thread} alt="" />
-          <div class=" rounded-md absolute bottom-0 px-4 py-1 bg-gray-500/80 w-full">
-            <h1 class="text-white font-semibold text-xl">Programs</h1>
+          <div class=" rounded-md absolute bottom-0 bg-gray-500/80 w-full">
+            <h1 class="text-white font-semibold py-1 lg:py-0 text-3xl sm:text-lg md:text-lg lg:text-lg">
+              Programs
+            </h1>
           </div>
         </div>
-        <div className="relative img hover:border-4">
+        <div className="relative img hover:scale-105 duration-300">
           <img className="rounded-md" src={web} alt="" />
-          <div class=" rounded-md absolute bottom-0 px-4 py-1 bg-gray-500/80 w-full">
-            <h1 class="text-white font-semibold text-xl">Fullfilment</h1>
+          <div class=" rounded-md absolute bottom-0 bg-gray-500/80 w-full">
+            <h1 class="text-white font-semibold py-1 lg:py-0 text-3xl sm:text-lg md:text-lg lg:text-lg">
+              Fullfilment
+            </h1>
           </div>
         </div>
       </div>

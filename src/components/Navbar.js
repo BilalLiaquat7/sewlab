@@ -25,36 +25,42 @@ export default function Navbar() {
   };
 
   return (
-    <div className="text-black flex justify-between h-24 max-w-[1240px] mx-auto px-4 items-center ">
+    <div className="text-black md:justify-end top-4 right-2 sm:top-0 md:right-16 lg:right-16 absolute flex h-24 max-w-[1240px] mx-auto w-full px-4  z-10 ">
       <img
-        className="flex cursor-pointer"
-        src={logo}
+        className="absolute left-4 top-2 h-8 md:hidden"
+        src={logoNav}
         alt=""
-        style={{ width: 200, height: 60 }}
       />
       <ul
         className="hidden md:flex justify-end "
         style={{ alignItems: "center" }}
       >
-        <li className="cursor-pointer hover:text-white li">
-          <a href="#shah">HOME</a>
+        <li className="cursor-pointer text-white hover:text-white li">
+          <a href="#home">HOME</a>
         </li>
-        <li className="cursor-pointer hover:text-white li">
+        <li className="cursor-pointer text-white hover:text-white li">
           <a href="#shah">ABOUT US</a>
         </li>
-        <li className="cursor-pointer  hover:text-white li">
+        <li className="cursor-pointer text-white hover:text-white li">
           <a href="#shah">CLIENTS</a>
         </li>
-        <li className="cursor-pointer hover:text-white li">
+        <li className="cursor-pointer text-white hover:text-white li">
           <a href="#shah">SERVICES</a>
         </li>
-        <li className="cursor-pointer  hover:text-white li">
+        <li className="cursor-pointer text-white hover:text-white li">
           <a href="#shah">CONTACT</a>
         </li>
       </ul>
 
-      <div onClick={handleNav} className="block md:hidden z-30">
-        {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      <div
+        onClick={handleNav}
+        className="block md:hidden z-30 absolute top-2 right-4"
+      >
+        {!nav ? (
+          <AiOutlineClose size={25} color="white" />
+        ) : (
+          <AiOutlineMenu size={25} color="white" />
+        )}
       </div>
       <div
         className={

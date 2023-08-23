@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -66,4 +73,10 @@
   width: 200px;
   border-radius: 8px;
   opacity: 90%;
+}
+
+.hero-img {
+  background: url(./assets/hero-desktop.png), lightgray 50% / cover no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }

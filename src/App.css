@@ -40,6 +40,8 @@
 
 .gap {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   gap: 2rem;
 }
 
@@ -60,10 +62,8 @@
     background-color: black;
 }
 
-/* .img {
+.img {
   width: 200px;
-  transform: skew(-15deg);
   border-radius: 8px;
-  background-color: black;
   opacity: 90%;
-} */
+}

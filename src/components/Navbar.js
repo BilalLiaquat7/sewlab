@@ -32,7 +32,7 @@ export default function Navbar() {
         alt=""
       />
       <ul
-        className="hidden md:flex justify-end "
+        className="hidden md:flex md:pr-8 md:pl-8 justify-end "
         style={{ alignItems: "center" }}
       >
         <li className="cursor-pointer text-white hover:text-white li">

@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/logo.png";
 import logoNav from "../assets/logoNav.png";
 export default function Navbar() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   // const [isHover, setIsHover] = useState(false);
 
   //  const handleMouseEnter = () => {

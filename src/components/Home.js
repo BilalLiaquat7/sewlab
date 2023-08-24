@@ -24,7 +24,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex w-full justify-end md:justify-center">
+          <div className="flex w-1/2 justify-end md:justify-center">
             <button className="flex py-2 px-2 items-start gap-2 text-white bg-transparent border rounded-lg w-20 justify-center md:text-white hover:bg-black">
               LOGIN
             </button>

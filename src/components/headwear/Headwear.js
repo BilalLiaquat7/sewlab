@@ -5,9 +5,9 @@ const Headwear = () => {
   return (
     <>
       <Navbar />
-      <div className="w-screen  h-screen head-img flex pb-4 pt-1 items-center flex-col md:justify-end md:bg-no-repeat">
+      <div className="w-screen  h-screen head-img flex pb-4 items-center flex-col md:justify-end md:bg-no-repeat">
         {/* <div className="relative w-full m-5 overflow-hidden">
-            <input type="checkbox" 
+            <input type="checkbox"
                 className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"/>
           <div className="flex items-center bg-blue-400 h-12 w-full m-5 mt-14 pl-5">
             <h1 className="text-lg font-semibold text-white">Fundamentals</h1>

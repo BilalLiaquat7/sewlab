@@ -2,52 +2,40 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logoNav from "../../assets/logoNav.png";
 export default function Navbar() {
+
   const [nav, setNav] = useState(true);
-  // const [isHover, setIsHover] = useState(false);
-
-  //  const handleMouseEnter = () => {
-  //     setIsHover(true);
-  //  };
-  //  const handleMouseLeave = () => {
-  //     setIsHover(false);
-  //  };
-
-  // const menuHover = {
-  //   backgroundColor: isHover ? 'green' : '',
-  //   padding: '36px 20px',
-  //   alignItems: 'center',
-  //   transform: 'skew(-20deg)'
-  // }
-
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="text-black md:justify-end top-4 right-2 sm:top-0 md:right-16 lg:right-16 absolute flex h-24 max-w-[1240px] mx-auto w-full px-4  z-10 ">
-      <div className="absolute left-4 top-2 h-8 md:flex md:justify-between md:pr-8 md:pl-8">
-      <button className="text-xl bg-black text-white px-10 py-1">Log In</button>
+    <div className="text-black md:justify-between md:items-center top-4 right-2 md:top-0 absolute flex h-24 mx-auto w-full px-4 z-10 md:z-0 ">
+
+      <button className="hidden bg-black text-white md:flex px-8 py-1">Log in</button>
+        <img
+        className="left-4 top-2 h-8"
+        src={logoNav}
+        alt=""
+      />
+
       <ul
         className="hidden md:flex md:pr-8 md:pl-8 justify-end"
         style={{ alignItems: "center" }}
-      >
+        >
         <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#home">HOME123</a>
+          <img src="" alt="" />
+          Home
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#shah">ABOUT US</a>
+          <img src="" alt="" />
+          About us
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#shah">CLIENTS</a>
-        </li>
-        <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#shah">SERVICES</a>
-        </li>
-        <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#shah">CONTACT</a>
+          <img src="" alt="" />
+          CLients
         </li>
       </ul>
-      </div>
+
 
       <div
         onClick={handleNav}
@@ -84,14 +72,6 @@ export default function Navbar() {
           <li className="p-4 cursor-pointer  hover:text-black border-b border-gray-300">
             {/* <Link to="/catalogue">Resources</Link> */}
             CLIENTS
-          </li>
-          <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
-            {/* <Link to="/contact-us">About</Link> */}
-            SERVICES
-          </li>
-          <li className="p-4 cursor-pointer  hover:text-black border-b border-gray-300">
-            {/* <Link to="/contact-us">Contact</Link> */}
-            CONTACT
           </li>
         </ul>
       </div>

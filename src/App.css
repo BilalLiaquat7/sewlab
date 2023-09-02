@@ -80,3 +80,9 @@
   background-position: bottom;
   background-size: cover;
 }
+
+.head-img {
+  background: url(./assets/Sew-lab-1.png), lightgray 50% / cover no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}

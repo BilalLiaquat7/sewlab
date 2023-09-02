@@ -1,9 +1,11 @@
 import cap from "../assets/cap.png";
 import logo from "../assets/logoNav.png";
+import Navbar from "./Navbar";
 
 export default function Home() {
   return (
     <>
+    <Navbar />
       <div className="w-screen  h-screen hero-img flex pb-4 pt-1 items-center flex-col md:justify-end md:bg-no-repeat">
         <div className="flex p-3 mt-16 justify-between items-end rounded-xl bg-blend-soft-light bg-[#00000042] w-11/12 h-36 md:mb-52 md:flex-col md:h-fit md:gap-6 md:w-fit md:justify-center">
           <div className="flex flex-col justify-center items-start">

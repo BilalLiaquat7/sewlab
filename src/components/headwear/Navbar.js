@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import logo from "../assets/logo.png";
-import logoNav from "../assets/logoNav.png";
-import { Link } from "react-router-dom";
-
+import logoNav from "../../assets/logoNav.png";
 export default function Navbar() {
   const [nav, setNav] = useState(true);
   // const [isHover, setIsHover] = useState(false);
@@ -28,20 +25,17 @@ export default function Navbar() {
 
   return (
     <div className="text-black md:justify-end top-4 right-2 sm:top-0 md:right-16 lg:right-16 absolute flex h-24 max-w-[1240px] mx-auto w-full px-4  z-10 ">
-      <img
-        className="absolute left-4 top-2 h-8 md:hidden"
-        src={logoNav}
-        alt=""
-      />
+      <div className="absolute left-4 top-2 h-8 md:flex md:justify-between md:pr-8 md:pl-8">
+      <button className="text-xl bg-black text-white px-10 py-1">Log In</button>
       <ul
-        className="hidden md:flex md:pr-8 md:pl-8 justify-end "
+        className="hidden md:flex md:pr-8 md:pl-8 justify-end"
         style={{ alignItems: "center" }}
       >
         <li className="cursor-pointer text-white hover:text-white li">
-          <Link to="/">HOME</Link>
+          <a href="#home">HOME123</a>
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
-          <Link to="/aboutus">ABOUT US</Link>
+          <a href="#shah">ABOUT US</a>
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
           <a href="#shah">CLIENTS</a>
@@ -53,6 +47,7 @@ export default function Navbar() {
           <a href="#shah">CONTACT</a>
         </li>
       </ul>
+      </div>
 
       <div
         onClick={handleNav}
@@ -79,7 +74,8 @@ export default function Navbar() {
         />
         <ul className="p-4 text-white uppercase">
           <li className=" p-4 cursor-pointer hover:text-black border-b border-gray-300">
-            <Link to="/">Home</Link>
+            {/* <Link to="/">Home</Link> */}
+            HOME
           </li>
           <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
             {/* <Link to="/about">Company</Link> */}

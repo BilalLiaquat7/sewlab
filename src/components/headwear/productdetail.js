@@ -7,7 +7,7 @@ import Styles from  './styles';
 
 const ProductDetail = () => {
   return (
-    <div className="mt-16 w-14/15 md:hidden">
+    <div className="mt-16 w-11/12 md:hidden">
       {/* Fundamentals */}
       <Accordion
         sx={{

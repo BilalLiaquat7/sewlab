@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logoNav from "../../assets/logoNav.png";
+import shirt from "../../assets/icon1.png";
+import programs from "../../assets/icon2.png";
+import apparel from "../../assets/icon3.png";
+
+
 export default function Navbar() {
 
   const [nav, setNav] = useState(true);
@@ -22,17 +27,14 @@ export default function Navbar() {
         className="hidden md:flex md:pr-8 md:pl-8 justify-end"
         style={{ alignItems: "center" }}
         >
-        <li className="cursor-pointer text-white hover:text-white li">
-          <img src="" alt="" />
-          Home
+        <li className="cursor-pointer text-white hover:text-white lin">
+          <img src={shirt} style={{height: 48, width: 48}} alt="" />
         </li>
-        <li className="cursor-pointer text-white hover:text-white li">
-          <img src="" alt="" />
-          About us
+        <li className="cursor-pointer text-white hover:text-white lin">
+          <img src={programs} style={{height: 48, width: 48}} alt="" />
         </li>
-        <li className="cursor-pointer text-white hover:text-white li">
-          <img src="" alt="" />
-          CLients
+        <li className="cursor-pointer text-white hover:text-white lin">
+          <img src={apparel} style={{height: 48, width: 48}} alt="" />
         </li>
       </ul>
 
@@ -61,17 +63,17 @@ export default function Navbar() {
           style={{ width: 150, height: 50 }}
         />
         <ul className="p-4 text-white uppercase">
-          <li className=" p-4 cursor-pointer hover:text-black border-b border-gray-300">
+          <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
             {/* <Link to="/">Home</Link> */}
-            HOME
+            <img src={shirt} style={{height: 48, width: 48}} alt="" />
           </li>
           <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
             {/* <Link to="/about">Company</Link> */}
-            ABOUT US
+            <img src={programs} style={{height: 48, width: 48}} alt="" />
           </li>
           <li className="p-4 cursor-pointer  hover:text-black border-b border-gray-300">
             {/* <Link to="/catalogue">Resources</Link> */}
-            CLIENTS
+            <img src={apparel} style={{height: 48, width: 48}} alt="" />
           </li>
         </ul>
       </div>

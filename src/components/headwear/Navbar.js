@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div className="text-black md:justify-between md:items-center top-4 md:top-0 absolute flex mx-auto w-[95%] z-10 md:z-0 ">
 
-      <button className="hidden bg-black text-white text-xl md:flex px-8 py-1">Log in</button>
+      <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md">Log in</button>
         <img
         className="left-4 top-2 h-10"
         src={logoNav}

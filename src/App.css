@@ -86,3 +86,8 @@
   background-position: bottom;
   background-size: cover;
 }
+
+/* Accordian padding 0 for fundaments and how to order */
+.MuiButtonBase-root {
+  padding: 0px !important;
+}

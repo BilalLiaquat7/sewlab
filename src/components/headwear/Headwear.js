@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import ProductDetail from "./Productdetail";
+import ProductDetail from "./productdetail";
 
 const Headwear = () => {
   return (

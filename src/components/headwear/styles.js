@@ -2,9 +2,7 @@ import Product from './product';
 
 const Styles = () => {
     return (
-        <div>
             <Product />
-        </div>
     );
 }
 

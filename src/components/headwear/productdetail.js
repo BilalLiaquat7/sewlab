@@ -104,7 +104,7 @@ const ProductDetail = () => {
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className="md:mt-24 md:w-[95%] w-11/12 md:gap-4  md:flex ">
+      <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex ">
         <Styles />
           <div className='md:w-[90%] hidden md:flex md:flex-col md:pt-16 md:gap-4'>
           <div className='flex w-full gap-4'>

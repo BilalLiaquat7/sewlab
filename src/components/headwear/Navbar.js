@@ -9,7 +9,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="text-black md:justify-between md:items-center top-4 right-2 md:top-0 absolute flex h-24 mx-auto w-full px-4 z-10 md:z-0 ">
+    <div className="text-black md:justify-between md:items-center top-4 md:top-0 absolute flex mx-auto w-11/12 z-10 md:z-0 ">
 
       <button className="hidden bg-black text-white md:flex px-8 py-1">Log in</button>
         <img
@@ -39,7 +39,7 @@ export default function Navbar() {
 
       <div
         onClick={handleNav}
-        className="block md:hidden z-30 absolute top-2 right-4"
+        className="block md:hidden z-30 absolute right-4"
       >
         {!nav ? (
           <AiOutlineClose size={25} color="white" />

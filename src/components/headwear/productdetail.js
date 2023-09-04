@@ -106,7 +106,7 @@ const ProductDetail = () => {
       </div>
       <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex ">
         <Styles />
-          <div className='md:w-[90%] hidden md:flex md:flex-col md:pt-16 md:gap-4'>
+          <div className='md:w-[90%] hidden md:flex md:flex-col md:pt-14 md:gap-4'>
           <div className='flex w-full gap-4'>
             <div className='flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white'>
               <h1 className='text-base font-bold'>Fundamentals</h1>

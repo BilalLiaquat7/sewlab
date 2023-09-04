@@ -4,6 +4,7 @@ import logoNav from "../../assets/logoNav.png";
 import shirt from "../../assets/icon1.png";
 import programs from "../../assets/icon2.png";
 import apparel from "../../assets/icon3.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [nav, setNav] = useState(true);
@@ -16,12 +17,16 @@ export default function Navbar() {
       <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md">
         Log in
       </button>
-      <img className="left-4 top-2 h-10" src={logoNav} alt="" />
+      <img className="left-4 top-2 h-10 pl-[10%]" src={logoNav} alt="" />
 
       <ul
         className="hidden md:flex justify-end"
         style={{ alignItems: "center" }}
       >
+        <li className="cursor-pointer text-white hover:text-white lin">
+          <Link to="/"><img src={shirt} style={{ height: 48, width: 48 }} alt="" /></Link>
+
+        </li>
         <li className="cursor-pointer text-white hover:text-white lin">
           <img src={shirt} style={{ height: 48, width: 48 }} alt="" />
         </li>

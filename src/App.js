@@ -1,6 +1,4 @@
 import "./App.css";
-// import Hero from './components/Hero';
-import Navbar from './components/Navbar';
 import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import Headwear from "./components/headwear/Headwear";
@@ -12,7 +10,6 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/aboutus" element={<Headwear />} />
     </Routes>
-      {/* <Hero /> */}
     </div>
   );
 }

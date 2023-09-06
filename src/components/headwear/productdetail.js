@@ -6,11 +6,11 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Styles from "./styles";
 import cap from "../../assets/cap.png";
-import side1 from '../../assets/sides/1.png'
-import side2 from '../../assets/sides/2.png'
-import side3 from '../../assets/sides/3.png'
-import side4 from '../../assets/sides/4.png'
-import side5 from '../../assets/sides/5.png'
+import side1 from "../../assets/sides/1.png";
+import side2 from "../../assets/sides/2.png";
+import side3 from "../../assets/sides/3.png";
+import side4 from "../../assets/sides/4.png";
+import side5 from "../../assets/sides/5.png";
 
 const ProductDetail = () => {
   const [selected, setSelected] = useState(false);
@@ -23,6 +23,7 @@ const ProductDetail = () => {
 
   const handleSelection = (flag) => {
     setSelected(flag);
+    console.log(selected);
   };
 
   return (

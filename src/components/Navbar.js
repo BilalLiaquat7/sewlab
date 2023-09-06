@@ -41,16 +41,16 @@ export default function Navbar() {
           <Link to="/">HOME</Link>
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
-          <Link to="/aboutus">ABOUT US</Link>
+          <Link to="#about">ABOUT US</Link>
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#shah">CLIENTS</a>
+          <a href="#clients">CLIENTS</a>
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#shah">SERVICES</a>
+          <a href="#services">SERVICES</a>
         </li>
         <li className="cursor-pointer text-white hover:text-white li">
-          <a href="#shah">CONTACT</a>
+          <a href="#contact">CONTACT</a>
         </li>
       </ul>
 

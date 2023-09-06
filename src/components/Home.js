@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import cap from "../assets/cap.png";
 import logo from "../assets/logoNav.png";
 import Navbar from "./Navbar";
@@ -36,7 +37,7 @@ export default function Home() {
         </div>
         <div className="flex pt-4 px-6 flex-col items-center gap-5 w-screen md:flex-row md:justify-between md:fixed md:bottom-8">
           <div className="flex py-4 px-4 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light  hover:scale-105 duration-300">
-            <img src={cap} alt="" className="w-auto h-full" />
+            <Link to="/headwear"><img src={cap} alt="" className="w-auto h-full" /></Link>
           </div>
           <div className="flex py-4 px-4 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light hover:scale-105 duration-300">
             <img src={cap} alt="" className="w-auto h-full" />

@@ -6,11 +6,19 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Styles from "./styles";
 import cap from "../../assets/cap.png";
-import side1 from '../../assets/sides/1.png'
-import side2 from '../../assets/sides/2.png'
-import side3 from '../../assets/sides/3.png'
-import side4 from '../../assets/sides/4.png'
-import side5 from '../../assets/sides/5.png'
+import side1 from '../../assets/sides/1.png';
+import side2 from '../../assets/sides/2.png';
+import side3 from '../../assets/sides/3.png';
+import side4 from '../../assets/sides/4.png';
+import side5 from '../../assets/sides/5.png';
+import Available1 from '../../assets/availablecolors/1.png';
+import Available2 from '../../assets/availablecolors/2.png';
+import Available3 from '../../assets/availablecolors/3.png';
+import Available4 from '../../assets/availablecolors/4.png';
+import Available5 from '../../assets/availablecolors/5.png';
+import Available6 from '../../assets/availablecolors/6.png';
+import Available7 from '../../assets/availablecolors/7.png';
+import Available8 from '../../assets/availablecolors/8.png';
 
 const ProductDetail = () => {
   const [selected, setSelected] = useState(false);
@@ -124,19 +132,19 @@ const ProductDetail = () => {
               Sides
             </h1>
             <div className="hidden md:flex gap-[1%] flex-wrap items-center">
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
+              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side1} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
+              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side2} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
+              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side3} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
+              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side4} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
+              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side5} alt="" className="w-auto h-full" />
               </div>
             </div>
@@ -144,46 +152,44 @@ const ProductDetail = () => {
               Available Colors
             </h1>
             <div className="hidden md:flex gap-[1%] flex-wrap items-center">
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available1} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>Black</p>
               </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available2} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>Dark gray</p>
               </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available3} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>Heather gray</p>
               </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available4} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>White</p>
               </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available5} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>Red</p>
               </div>
-              <div className="flex-col w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
-                Black
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available6} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>Maroon</p>
               </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available7} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>Navy</p>
               </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
-              </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
-              </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
-              </div>
-              <div className="flex w-[48%] md:w-[9%] py-2 my-2 px-6 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm shadow-sm shadow-white/50">
-                <img src={cap} alt="" className="w-auto h-full" />
+              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm ">
+                <img src={Available8} alt="" className="w-auto h-full" />
+                <p className='text-white w-max'>Royal</p>
               </div>
             </div>
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
               Download design template
             </h1>
-            <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md">
-              Design template
+            <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md md:my-2">
+              Design Template
             </button>
           </div>
         ) : (

@@ -31,6 +31,7 @@ const ProductDetail = () => {
 
   const handleSelection = (flag) => {
     setSelected(flag);
+    console.log(selected);
   };
 
   return (

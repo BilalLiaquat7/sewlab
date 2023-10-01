@@ -40,7 +40,7 @@ export default function Home() {
             <Link to="/headwear"><img src={cap} alt="" className="w-auto h-full" /></Link>
           </div>
           <div className="flex py-4 px-4 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light hover:scale-105 duration-300">
-            <img src={cap} alt="" className="w-auto h-full" />
+            <Link to="/apparel"><img src={cap} alt="" className="w-auto h-full" /></Link>
           </div>
           <div className="flex py-4 px-4 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light hover:scale-105 duration-300">
             <img src={cap} alt="" className="w-auto h-full " />

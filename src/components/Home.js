@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import cap from "../assets/cap.png";
+import apparel1 from "../assets/apparel/apparel1.svg";
 import logo from "../assets/logoNav.png";
 import Navbar from "./Navbar";
 
@@ -39,8 +40,8 @@ export default function Home() {
           <div className="flex py-4 px-4 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light  hover:scale-105 duration-300">
             <Link to="/headwear"><img src={cap} alt="" className="w-auto h-full" /></Link>
           </div>
-          <div className="flex py-4 px-4 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light hover:scale-105 duration-300">
-            <Link to="/apparel"><img src={cap} alt="" className="w-auto h-full" /></Link>
+          <div className="flex py-4 px-16 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light hover:scale-105 duration-300">
+            <Link to="/apparel"><img src={apparel1} alt="" className="w-auto h-full" /></Link>
           </div>
           <div className="flex py-4 px-4 justify-center items-center gap-2 self-stretch rounded-lg bg-[#00000042] bg-blend-soft-light hover:scale-105 duration-300">
             <img src={cap} alt="" className="w-auto h-full " />

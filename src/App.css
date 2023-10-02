@@ -100,3 +100,9 @@
 .MuiButtonBase-root {
   padding: 0px !important;
 }
+
+#growth {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+ }

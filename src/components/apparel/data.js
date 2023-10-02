@@ -75,4 +75,70 @@ const colorImages = [
     number: 19,
     image: "color19",
   },
+  {
+    number: 20,
+    image: "color20",
+  },
+  {
+    number: 21,
+    image: "color21",
+  },
+  {
+    number: 22,
+    image: "color22",
+  },
+  {
+    number: 23,
+    image: "color23",
+  },
+  {
+    number: 24,
+    image: "color24",
+  },
+  {
+    number: 25,
+    image: "color25",
+  },
+  {
+    number: 26,
+    image: "color26",
+  },
+  {
+    number: 27,
+    image: "color27",
+  },
+  {
+    number: 28,
+    image: "color28",
+  },
+  {
+    number: 29,
+    image: "color29",
+  },
+  {
+    number: 30,
+    image: "color30",
+  },
+  {
+    number: 31,
+    image: "color31",
+  },
+  {
+    number: 32,
+    image: "color32",
+  },
+  {
+    number: 33,
+    image: "color33",
+  },
+  {
+    number: 34,
+    image: "color34",
+  },
+  {
+    number: 35,
+    image: "color35",
+  },
 ];
+
+export default colorImages;

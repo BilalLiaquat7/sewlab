@@ -37,7 +37,7 @@ const ProductDetail = () => {
 
   return (
     <>
-        <div className="mt-16 pb-1 w-11/12 mb-4 md:hidden">
+      <div className="mt-16 pb-1 w-11/12 mb-4 md:hidden">
         {/* Fundamentals */}
         <Accordion
           expanded={expanded === "panel1"}
@@ -134,7 +134,7 @@ const ProductDetail = () => {
               Sides
             </h1>
             <div className="hidden md:flex gap-[1%] flex-wrap items-center">
-              <div className="flex w-[48%] md:w-[95.5%] py-10 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-[48%] md:w-[100%] py-10 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side1} alt="" className="w-auto h-full" />
               </div>
             </div>
@@ -142,39 +142,41 @@ const ProductDetail = () => {
               Available Colors
             </h1>
             <div className="hidden md:flex gap-[1%] flex-wrap items-center">
-                {
-                    colorImages.map((item, index) =>(
-                        <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[4.5%] py-[10px] px-[2px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
-                            <img src={item.image} alt="" className="w-auto h-full" />
-                        </div>
-                    ))
-                }
+              {colorImages.map((item, index) => (
+                <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[4.5%] py-[10px] px-[2px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                  <img
+                    src={require("../../assets/apparel/" + item.image + ".svg")}
+                    alt=""
+                    className="w-auto h-full"
+                  />
+                </div>
+              ))}
             </div>
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
               Sizes
             </h1>
             <div className="flex gap-2">
-                <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
+              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
                 XS
-                </button>
-                <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              </button>
+              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
                 S
-                </button>
-                <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              </button>
+              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
                 M
-                </button>
-                <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              </button>
+              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
                 L
-                </button>
-                <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
+              </button>
+              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
                 XL
-                </button>
-                <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
+              </button>
+              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
                 2XL
-                </button>
-                <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
+              </button>
+              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
                 3XL
-                </button>
+              </button>
             </div>
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
               Download design template

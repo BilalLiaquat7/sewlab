@@ -5,21 +5,9 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Styles from "./styles";
-import cap from "../../assets/cap.png";
 import side1 from "../../assets/apparel/shirtbanner.png";
-import side2 from "../../assets/sides/2.png";
-import side3 from "../../assets/sides/3.png";
-import side4 from "../../assets/sides/4.png";
-import side5 from "../../assets/sides/5.png";
-import color1 from "../../assets/apparel/color1.svg";
-import color2 from "../../assets/apparel/color2.svg";
-import color3 from "../../assets/apparel/color3.svg";
-import color4 from "../../assets/apparel/color4.svg";
-import color5 from "../../assets/apparel/color5.svg";
-import color6 from "../../assets/apparel/color6.svg";
-import color7 from "../../assets/apparel/color7.svg";
-import color8 from "../../assets/apparel/color8.svg";
 import colorImages from "./data";
+import RSC from "react-scrollbars-custom";
 
 const ProductDetail = () => {
   const [selected, setSelected] = useState(false);
@@ -129,7 +117,10 @@ const ProductDetail = () => {
       <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex ">
         <Styles handleSelection={handleSelection} />
         {selected ? (
-          <div id="growth" className="md:w-[90%] pl-[3%] justify-start mt-5 md:flex-col">
+          <div
+            id="growth"
+            className="md:w-[90%] pl-[3%] justify-start mt-5 md:flex-col"
+          >
             <h1 className="text-white md:text-left text-xl items-start text-center">
               Sides
             </h1>
@@ -185,7 +176,7 @@ const ProductDetail = () => {
               Design Template
             </button>
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
-              Specifications 
+              Specifications
             </h1>
             <div className="md:w-[100%] hidden md:flex md:flex-col md:pt-4 md:gap-4">
               <div className="flex w-full gap-4">
@@ -226,23 +217,23 @@ const ProductDetail = () => {
               <div className="flex flex-col p-3 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
                 <h1 className="text-base font-bold pl-6">CASE QUANTITY</h1>
                 <div className="gap-3">
-                    <div className="pl-6 pt-3 flex flex-col gap-2">
-                      <p>72Pcs</p>
-                    </div>
+                  <div className="pl-6 pt-3 flex flex-col gap-2">
+                    <p>72Pcs</p>
                   </div>
+                </div>
               </div>
             </div>
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
-              Pricing 
+              Pricing
             </h1>
             <div className="flex flex-col p-3 md:mt-4 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
-                <h1 className="text-base font-bold pl-6">CASE QUANTITY</h1>
-                <div className="gap-3">
-                    <div className="pl-6 pt-3 flex flex-col gap-2">
-                      <p>72Pcs</p>
-                    </div>
-                  </div>
+              <h1 className="text-base font-bold pl-6">CASE QUANTITY</h1>
+              <div className="gap-3">
+                <div className="pl-6 pt-3 flex flex-col gap-2">
+                  <p>72Pcs</p>
+                </div>
               </div>
+            </div>
           </div>
         ) : (
           <div className="md:w-[90%] md:pl-[3%] hidden md:flex md:flex-col md:pt-14 md:gap-4">

@@ -25,10 +25,9 @@ export default function Navbar() {
       >
         <li className="cursor-pointer text-white hover:text-white lin">
           <Link to="/"><img src={shirt} style={{ height: 48, width: 48 }} alt="" /></Link>
-
         </li>
         <li className="cursor-pointer text-white hover:text-white lin">
-          <img src={shirt} style={{ height: 48, width: 48 }} alt="" />
+        <Link to="/apparel"><img src={shirt} style={{ height: 48, width: 48 }} alt="" /></Link>
         </li>
         <li className="cursor-pointer text-white hover:text-white lin">
           <img src={programs} style={{ height: 48, width: 48 }} alt="" />

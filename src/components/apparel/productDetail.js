@@ -118,22 +118,22 @@ const ProductDetail = () => {
         <Styles handleSelection={handleSelection} />
         {selected ? (
           <div
-            className="md:w-[90%] pl-[3%] justify-start mt-5 md:flex-col growth md:growth"
+            className="md:w-[90%] justify-start mt-5 md:flex-col growth"
           >
-            <h1 className="text-white md:text-left text-xl items-start text-center">
+            <h1 className="text-white text-left text-xl items-start">
               Sides
             </h1>
             <div className=" md:flex gap-[1%] flex-wrap items-center">
-              <div className="flex w-[48%] md:w-[100%] py-10 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-[100%] py-10 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side1} alt="" className="w-auto h-full" />
               </div>
             </div>
-            <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
+            <h1 className="text-white text-left text-xl items-start mt-4">
               Available Colors
             </h1>
             <div className=" flex md:flex gap-1 flex-wrap items-center">
               {colorImages.map((item, index) => (
-                <div className="flex md:gap-2 md:flex-col w-[48%] w-auto py-[10px] px-[10px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm ">
+                <div className="flex md:gap-2 md:flex-col w-auto py-[10px] px-[10px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm ">
                   <img
                     src={require("../../assets/apparel/" + item.image + ".svg")}
                     alt=""
@@ -142,43 +142,43 @@ const ProductDetail = () => {
                 </div>
               ))}
             </div>
-            <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
+            <h1 className="text-white text-left text-xl items-start mt-4">
               Sizes
             </h1>
-            <div className="flex gap-2">
-              <button className=" md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
+            <div className="flex gap-2 flex-wrap">
+              <button className=" bg-black text-white text-xl flex px-7 py-4 rounded-md my-2">
                 XS
               </button>
-              <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              <button className=" bg-black text-white text-xl flex px-8 py-4 rounded-md my-2">
                 S
               </button>
-              <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              <button className=" bg-black text-white text-xl flex px-8 py-4 rounded-md my-2">
                 M
               </button>
-              <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              <button className=" bg-black text-white text-xl flex px-8 py-4 rounded-md my-2">
                 L
               </button>
-              <button className=" md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
+              <button className=" bg-black text-white text-xl flex px-7 py-4 rounded-md my-2">
                 XL
               </button>
-              <button className=" md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
+              <button className=" bg-black text-white text-xl flex px-6 py-4 rounded-md my-2">
                 2XL
               </button>
-              <button className=" md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
+              <button className=" bg-black text-white text-xl flex px-6 py-4 rounded-md my-2">
                 3XL
               </button>
             </div>
-            <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
+            <h1 className="text-white text-left text-xl items-start mt-4">
               Download design template
             </h1>
-            <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md md:my-2">
+            <button className=" bg-black text-white text-xl flex px-8 py-2 rounded-md my-4">
               Design Template
             </button>
-            <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
+            <h1 className="text-white text-left text-xl items-start mt-4">
               Specifications
             </h1>
-            <div className="md:w-[100%]  md:flex md:flex-col md:pt-4 md:gap-4">
-              <div className="flex w-full gap-4">
+            <div className="md:w-[100%] md:flex md:flex-col pt-4 md:gap-4">
+              <div className="flex flex-col md:flex-row w-full gap-4">
                 <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
                   <h1 className="text-base font-bold pl-6">FABRIC</h1>
                   <div className="gap-3">
@@ -213,7 +213,7 @@ const ProductDetail = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col p-3 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
+              <div className="flex mt-4 flex-col p-3 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
                 <h1 className="text-base font-bold pl-6">CASE QUANTITY</h1>
                 <div className="gap-3">
                   <div className="pl-6 pt-3 flex flex-col gap-2">
@@ -222,11 +222,11 @@ const ProductDetail = () => {
                 </div>
               </div>
             </div>
-            <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
+            <h1 className="text-white text-left text-xl items-start mt-4">
               Pricing
             </h1>
-            <div className="flex flex-col p-3 md:mt-4 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
-              <h1 className="text-base font-bold pl-6">CASE QUANTITY</h1>
+            <div className="flex flex-col p-3 mt-4 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
+              <h1 className="text-base font-bold pl-6">Pricing</h1>
               <div className="gap-3">
                 <div className="pl-6 pt-3 flex flex-col gap-2">
                   <p>72Pcs</p>
@@ -236,7 +236,7 @@ const ProductDetail = () => {
           </div>
         ) : (
           <div className="md:w-[90%] md:pl-[3%]  md:flex md:flex-col md:pt-14 md:gap-4">
-            <div className="flex w-full gap-4">
+            <div className="flex flex-col md:flex-row w-full gap-4">
               <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
                 <h1 className="text-base font-bold">Fundamentals</h1>
                 <div className="gap-3">
@@ -286,7 +286,7 @@ const ProductDetail = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col p-3 rounded-lg self-stretch bg-black/20">
+            <div className="flex flex-col mt-4 p-3 rounded-lg self-stretch bg-black/20">
               <p className="text-white">
                 <span>*</span> Lead times are approximate and vary throughout
                 the year if you have a deadline, please consult with your

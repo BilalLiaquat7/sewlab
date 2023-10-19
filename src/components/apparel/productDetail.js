@@ -118,13 +118,12 @@ const ProductDetail = () => {
         <Styles handleSelection={handleSelection} />
         {selected ? (
           <div
-            id="growth"
-            className="md:w-[90%] pl-[3%] justify-start mt-5 md:flex-col"
+            className="md:w-[90%] pl-[3%] justify-start mt-5 md:flex-col growth md:growth"
           >
             <h1 className="text-white md:text-left text-xl items-start text-center">
               Sides
             </h1>
-            <div className="hidden md:flex gap-[1%] flex-wrap items-center">
+            <div className=" md:flex gap-[1%] flex-wrap items-center">
               <div className="flex w-[48%] md:w-[100%] py-10 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side1} alt="" className="w-auto h-full" />
               </div>
@@ -132,13 +131,13 @@ const ProductDetail = () => {
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
               Available Colors
             </h1>
-            <div className="hidden md:flex gap-[1%] flex-wrap items-center">
+            <div className=" flex md:flex gap-1 flex-wrap items-center">
               {colorImages.map((item, index) => (
-                <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[4.5%] py-[10px] px-[2px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <div className="flex md:gap-2 md:flex-col w-[48%] w-auto py-[10px] px-[10px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm ">
                   <img
                     src={require("../../assets/apparel/" + item.image + ".svg")}
                     alt=""
-                    className="w-auto h-full"
+                    className="w-9 h-9"
                   />
                 </div>
               ))}
@@ -147,38 +146,38 @@ const ProductDetail = () => {
               Sizes
             </h1>
             <div className="flex gap-2">
-              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
+              <button className=" md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
                 XS
               </button>
-              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
                 S
               </button>
-              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
                 M
               </button>
-              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
+              <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-4 rounded-md md:my-2">
                 L
               </button>
-              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
+              <button className=" md:bg-black md:text-white md:text-xl md:flex px-7 py-4 rounded-md md:my-2">
                 XL
               </button>
-              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
+              <button className=" md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
                 2XL
               </button>
-              <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
+              <button className=" md:bg-black md:text-white md:text-xl md:flex px-6 py-4 rounded-md md:my-2">
                 3XL
               </button>
             </div>
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
               Download design template
             </h1>
-            <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md md:my-2">
+            <button className=" md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md md:my-2">
               Design Template
             </button>
             <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
               Specifications
             </h1>
-            <div className="md:w-[100%] hidden md:flex md:flex-col md:pt-4 md:gap-4">
+            <div className="md:w-[100%]  md:flex md:flex-col md:pt-4 md:gap-4">
               <div className="flex w-full gap-4">
                 <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
                   <h1 className="text-base font-bold pl-6">FABRIC</h1>
@@ -236,7 +235,7 @@ const ProductDetail = () => {
             </div>
           </div>
         ) : (
-          <div className="md:w-[90%] md:pl-[3%] hidden md:flex md:flex-col md:pt-14 md:gap-4">
+          <div className="md:w-[90%] md:pl-[3%]  md:flex md:flex-col md:pt-14 md:gap-4">
             <div className="flex w-full gap-4">
               <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
                 <h1 className="text-base font-bold">Fundamentals</h1>

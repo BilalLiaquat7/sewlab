@@ -4,7 +4,7 @@ import ProductDetail from "./productDetail";
 const Apparel = () => {
   return (
     <>
-    <div className="w-screen h-screen head-img flex pb-4 pt-8 items-center flex-col md:bg-no-repeat">
+    <div className="w-screen head-img flex pb-4 pt-8 items-center flex-col md:bg-no-repeat">
       <Navbar />
       <ProductDetail />
     </div>

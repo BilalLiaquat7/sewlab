@@ -117,11 +117,11 @@ const ProductDetail = () => {
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex ">
+      <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex  ">
         <Styles handleSelection={handleSelection} />
         {(selected && item == 0) ? (
           <div
-            className="md:w-[90%] justify-start mt-5 md:flex-col growth"
+            className="md:w-[90%] justify-start mt-5 md:flex-col md:h-screen md:overflow-scroll"
           >
             <h1 className="text-white text-left text-xl items-start">
               Sides

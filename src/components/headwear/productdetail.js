@@ -6,19 +6,19 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Styles from "./styles";
 import cap from "../../assets/cap.png";
-import side1 from '../../assets/sides/1.png';
-import side2 from '../../assets/sides/2.png';
-import side3 from '../../assets/sides/3.png';
-import side4 from '../../assets/sides/4.png';
-import side5 from '../../assets/sides/5.png';
-import Available1 from '../../assets/availablecolors/1.png';
-import Available2 from '../../assets/availablecolors/2.png';
-import Available3 from '../../assets/availablecolors/3.png';
-import Available4 from '../../assets/availablecolors/4.png';
-import Available5 from '../../assets/availablecolors/5.png';
-import Available6 from '../../assets/availablecolors/6.png';
-import Available7 from '../../assets/availablecolors/7.png';
-import Available8 from '../../assets/availablecolors/8.png';
+import side1 from "../../assets/sides/1.png";
+import side2 from "../../assets/sides/2.png";
+import side3 from "../../assets/sides/3.png";
+import side4 from "../../assets/sides/4.png";
+import side5 from "../../assets/sides/5.png";
+import Available1 from "../../assets/availablecolors/1.png";
+import Available2 from "../../assets/availablecolors/2.png";
+import Available3 from "../../assets/availablecolors/3.png";
+import Available4 from "../../assets/availablecolors/4.png";
+import Available5 from "../../assets/availablecolors/5.png";
+import Available6 from "../../assets/availablecolors/6.png";
+import Available7 from "../../assets/availablecolors/7.png";
+import Available8 from "../../assets/availablecolors/8.png";
 
 const ProductDetail = () => {
   const [selected, setSelected] = useState(false);
@@ -36,7 +36,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <div className="mt-16 pb-1 w-11/12 mb-4 md:hidden">
+      <div className="mt-16 pb-1 w-11/12 mb-4 md:hidden overflow-scroll">
         {/* Fundamentals */}
         <Accordion
           expanded={expanded === "panel1"}
@@ -128,68 +128,66 @@ const ProductDetail = () => {
       <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex ">
         <Styles handleSelection={handleSelection} />
         {selected ? (
-          <div className="md:w-[90%] pl-[3%] justify-start mt-5 md:flex-col">
-            <h1 className="text-white md:text-left text-xl items-start text-center">
-              Sides
-            </h1>
-            <div className="hidden md:flex gap-[1%] flex-wrap items-center">
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+          <div className="md:w-[90%] justify-start mt-5 md:flex-col md:h-screen overflow-auto md:overflow-scroll">
+            <h1 className="text-white text-left text-xl items-start">Sides</h1>
+            <div className="flex gap-[1%] flex-wrap items-center">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side1} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg  bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side2} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side3} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side4} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-[48%] md:w-[11.5%] py-4 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side5} alt="" className="w-auto h-full" />
               </div>
             </div>
-            <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
+            <h1 className="text-white text-left text-xl items-start mt-4">
               Available Colors
             </h1>
-            <div className="hidden md:flex gap-[1%] flex-wrap items-center">
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+            <div className="flex gap-2 flex-wrap">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available1} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>Black</p>
+                <p className="text-white w-max mt-4">Black</p>
               </div>
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available2} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>Dark gray</p>
+                <p className="text-white w-max mt-4">Dark gray</p>
               </div>
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available3} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>Heather gray</p>
+                <p className="text-white w-max mt-4">Heather gray</p>
               </div>
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available4} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>White</p>
+                <p className="text-white w-max mt-4">White</p>
               </div>
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available5} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>Red</p>
+                <p className="text-white w-max mt-4">Red</p>
               </div>
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available6} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>Maroon</p>
+                <p className="text-white w-max mt-4">Maroon</p>
               </div>
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available7} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>Navy</p>
+                <p className="text-white w-max mt-4">Navy</p>
               </div>
-              <div className="flex md:gap-2 md:flex-col w-[48%] md:w-[11.5%] py-[10px] px-[26px] my-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm ">
                 <img src={Available8} alt="" className="w-auto h-full" />
-                <p className='text-white w-max'>Royal</p>
+                <p className="text-white w-max mt-4">Royal</p>
               </div>
             </div>
-            <h1 className="text-white md:text-left text-xl items-start text-center mt-[1.5%]">
+            <h1 className="text-white text-left text-xl items-start mt-4">
               Download design template
             </h1>
-            <button className="hidden md:bg-black md:text-white md:text-xl md:flex px-8 py-2 rounded-md md:my-2">
+            <button className="bg-black text-white text-xl flex px-8 py-2 rounded-md my-2">
               Design Template
             </button>
           </div>

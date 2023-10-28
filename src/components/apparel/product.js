@@ -1,31 +1,26 @@
 import { useState } from "react";
 import apparelProducts from "../apparel/apparelProduct";
 
+const initialItemStates = apparelProducts.reduce((acc, item) => {
+  return { ...acc, [item]: false };
+}, {});
+
 const Product = (props) => {
-  const initialItemStates = apparelProducts.reduce((acc, item) => {
-    return { ...acc, [item]: false };
-  }, {});
   const [itemStates, setItemStates] = useState(initialItemStates);
 
   const handleToggleState = (item, index) => {
-    setItemStates((prevItemStates) => ({
-      [item]: !prevItemStates[item],
-    }));
-    console.log("====", itemStates[item]);
-    props.handleSelection(itemStates[item], index);
+    console.log("I'm clicked...");
+
+    setItemStates((prevItemStates) => {
+      // Create a copy of the previous state
+      const updatedItemStates = { ...prevItemStates };
+      // Toggle the state of the specific item
+      updatedItemStates[item] = !prevItemStates[item];
+      // Call the function with the updated state
+      props.handleSelection(updatedItemStates[item], index);
+      return updatedItemStates;
+    });
   };
-
-  // const changeFlag = (index) => {
-
-  // if (flag) {
-  //   setFlag(false);
-  //   props.handleSelection(false);
-  // } else {
-  //   setFlag(true);
-  //   props.handleSelection(true);
-  // }
-  // console.log(index);
-  // };
 
   return (
     <div className="md:w-min md:h-screen md:overflow-scroll">

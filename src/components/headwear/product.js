@@ -9,8 +9,6 @@ const Product = (props) => {
   const [itemStates, setItemStates] = useState(initialItemStates);
 
   const handleToggleState = (item, index) => {
-    console.log("I'm clicked...");
-
     setItemStates((prevItemStates) => {
       // Create a copy of the previous state
       const updatedItemStates = { ...prevItemStates };

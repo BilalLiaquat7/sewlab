@@ -5,7 +5,6 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Styles from "./styles";
-import cap from "../../assets/styles/cap.png";
 import side1 from "../../assets/sides/1.png";
 import side2 from "../../assets/sides/2.png";
 import side3 from "../../assets/sides/3.png";
@@ -31,10 +30,8 @@ const ProductDetail = () => {
   };
 
   const handleSelection = (flag, item) => {
-    console.log(flag, "====", item);
     setSelected(flag);
     setItem(item);
-    console.log(selected, item);
   };
 
   return (
@@ -130,7 +127,7 @@ const ProductDetail = () => {
       </div>
       <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex ">
         <Styles handleSelection={handleSelection} />
-        {selected ? (
+        {selected && item == 0 ? (
           <div className="md:w-[90%] justify-start mt-5 md:flex-col md:h-[85vh] overflow-auto">
             <h1 className="text-white text-left text-xl items-start">Sides</h1>
             <div className="flex gap-[1%] flex-wrap items-center">
@@ -194,6 +191,8 @@ const ProductDetail = () => {
               Design Template
             </button>
           </div>
+        ) : selected && item == 1 ? (
+          <p>Under Development</p>
         ) : (
           <div className="md:w-[90%] md:pl-[3%] hidden md:flex md:flex-col md:pt-14 md:gap-4">
             <div className="flex w-full gap-4">

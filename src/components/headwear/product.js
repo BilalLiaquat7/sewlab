@@ -19,7 +19,7 @@ const Product = (props) => {
   };
 
   return (
-    <div className="md:w-min md:h-screen md:overflow-scroll">
+    <div className="md:w-min md:h-screen overflow-auto">
       <h1 className="text-white text-2xl mt-4 md:text-center">Styles</h1>
       <div className="flex gap-[4%] flex-wrap items-center">
         <div

@@ -19,10 +19,8 @@ const ProductDetail = () => {
   };
 
   const handleSelection = (flag, item) => {
-    console.log(flag, "====", item);
     setSelected(flag);
     setItem(item);
-    console.log(selected, item);
   };
 
   return (

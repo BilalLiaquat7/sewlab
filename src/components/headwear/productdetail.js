@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Styles from "./styles";
-import cap from "../../assets/cap.png";
+import cap from "../../assets/styles/cap.png";
 import side1 from "../../assets/sides/1.png";
 import side2 from "../../assets/sides/2.png";
 import side3 from "../../assets/sides/3.png";
@@ -22,6 +22,7 @@ import Available8 from "../../assets/availablecolors/8.png";
 
 const ProductDetail = () => {
   const [selected, setSelected] = useState(false);
+  const [item, setItem] = useState(null);
 
   const [expanded, setExpanded] = useState(false);
 
@@ -29,9 +30,11 @@ const ProductDetail = () => {
     setExpanded(isExpanded ? panel : false);
   };
 
-  const handleSelection = (flag) => {
+  const handleSelection = (flag, item) => {
+    console.log(flag, "====", item);
     setSelected(flag);
-    console.log(selected);
+    setItem(item);
+    console.log(selected, item);
   };
 
   return (

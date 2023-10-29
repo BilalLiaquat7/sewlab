@@ -24,10 +24,14 @@ export default function Navbar() {
         style={{ alignItems: "center" }}
       >
         <li className="cursor-pointer text-white hover:text-white lin">
-          <Link to="/"><img src={shirt} style={{ height: 48, width: 48 }} alt="" /></Link>
+          <Link to="/">
+            <img src={shirt} style={{ height: 48, width: 48 }} alt="" />
+          </Link>
         </li>
         <li className="cursor-pointer text-white hover:text-white lin">
-        <Link to="/apparel"><img src={shirt} style={{ height: 48, width: 48 }} alt="" /></Link>
+          <Link to="/apparel">
+            <img src={shirt} style={{ height: 48, width: 48 }} alt="" />
+          </Link>
         </li>
         <li className="cursor-pointer text-white hover:text-white lin">
           <img src={programs} style={{ height: 48, width: 48 }} alt="" />
@@ -62,8 +66,10 @@ export default function Navbar() {
         />
         <ul className="p-4 text-white uppercase">
           <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
-            {/* <Link to="/">Home</Link> */}
-            <img src={shirt} style={{ height: 48, width: 48 }} alt="" />
+            <Link to="/">
+              {" "}
+              <img src={shirt} style={{ height: 48, width: 48 }} alt="" />
+            </Link>
           </li>
           <li className="p-4 cursor-pointer hover:text-black border-b border-gray-300">
             {/* <Link to="/about">Company</Link> */}

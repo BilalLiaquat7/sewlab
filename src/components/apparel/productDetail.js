@@ -230,6 +230,8 @@ const ProductDetail = () => {
               </div>
             </div>
           </div>
+        ) : selected && item == 1 ? (
+          <p>Under Development</p>
         ) : (
           <div className="md:w-[90%] md:pl-[3%]  md:flex md:flex-col md:pt-14 md:gap-4">
             <div className="flex flex-col md:flex-row w-full gap-4">

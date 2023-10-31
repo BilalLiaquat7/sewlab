@@ -5,19 +5,13 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Styles from "./styles";
-import side1 from "../../assets/sides/1.png";
-import side2 from "../../assets/sides/2.png";
-import side3 from "../../assets/sides/3.png";
-import side4 from "../../assets/sides/4.png";
-import side5 from "../../assets/sides/5.png";
-import Available1 from "../../assets/availablecolors/1.png";
-import Available2 from "../../assets/availablecolors/2.png";
-import Available3 from "../../assets/availablecolors/3.png";
-import Available4 from "../../assets/availablecolors/4.png";
-import Available5 from "../../assets/availablecolors/5.png";
-import Available6 from "../../assets/availablecolors/6.png";
-import Available7 from "../../assets/availablecolors/7.png";
-import Available8 from "../../assets/availablecolors/8.png";
+import side1 from "../../assets/sides/1.svg";
+import side2 from "../../assets/sides/2.svg";
+import side3 from "../../assets/sides/3.svg";
+import Available1 from "../../assets/availablecolors/1.svg";
+import Available2 from "../../assets/availablecolors/2.svg";
+import Available3 from "../../assets/availablecolors/3.svg";
+import Available4 from "../../assets/availablecolors/4.svg";
 
 const ProductDetail = () => {
   const [selected, setSelected] = useState(false);
@@ -140,12 +134,6 @@ const ProductDetail = () => {
               <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={side3} alt="" className="w-auto h-full" />
               </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
-                <img src={side4} alt="" className="w-auto h-full" />
-              </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-8 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
-                <img src={side5} alt="" className="w-auto h-full" />
-              </div>
             </div>
             <h1 className="text-white text-left text-xl items-start mt-4">
               Available Colors
@@ -153,11 +141,11 @@ const ProductDetail = () => {
             <div className="flex gap-2 flex-wrap">
               <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available1} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Black</p>
+                <p className="text-white w-max mt-4">Blue</p>
               </div>
               <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available2} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Dark gray</p>
+                <p className="text-white w-max mt-4">White</p>
               </div>
               <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available3} alt="" className="w-auto h-full" />
@@ -167,22 +155,6 @@ const ProductDetail = () => {
                 <img src={Available4} alt="" className="w-auto h-full" />
                 <p className="text-white w-max mt-4">White</p>
               </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
-                <img src={Available5} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Red</p>
-              </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
-                <img src={Available6} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Maroon</p>
-              </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
-                <img src={Available7} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Navy</p>
-              </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm ">
-                <img src={Available8} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Royal</p>
-              </div>
             </div>
             <h1 className="text-white text-left text-xl items-start mt-4">
               Download design template
@@ -190,6 +162,54 @@ const ProductDetail = () => {
             <button className="bg-black text-white text-xl flex px-8 py-2 rounded-md my-2">
               Design Template
             </button>
+            <h1 className="text-white text-left text-xl items-start mt-4">
+              Specifications
+            </h1>
+            <div className="md:w-[100%] md:flex md:flex-col pt-4 md:gap-4">
+              <div className="flex flex-col md:flex-row w-full gap-4">
+                <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
+                  <h1 className="text-base font-bold pl-6">FABRIC</h1>
+                  <div className="gap-3">
+                    <div className="pl-6 pt-3 flex flex-col gap-2">
+                      <p>
+                        24 single, 5.5 oz., soft-washed, 100% combed ring-spun
+                        cotton, except Athletic Heather (85%/15%
+                        cotton/viscose), Black Graphite Heather (80% cotton/20%
+                        polyester), and all other Heathers (60% cotton/40%
+                        polyester).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
+                  <h1 className="text-base font-bold pl-6">FEATURES</h1>
+                  <div className="gap-3">
+                    <div className="pl-6 pt-3 flex flex-col gap-2">
+                      <p>
+                        Ultra soft hand, side-seamed, tightly knit, superior
+                        printability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
+                  <h1 className="text-base font-bold pl-6">LABEL</h1>
+                  <div className="gap-3">
+                    <div className="pl-6 pt-3 flex flex-col gap-2">
+                      <p>Tear-away</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex mt-4 flex-col p-3 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
+                <h1 className="text-base font-bold pl-6">CASE QUANTITY</h1>
+                <div className="gap-3">
+                  <div className="pl-6 pt-3 flex flex-col gap-2">
+                    <p>72Pcs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         ) : selected && item == 1 ? (
           <p>Under Development</p>

@@ -34,7 +34,7 @@ const Product = (props) => {
             }
           >
             <img
-              src={require("../../assets/styles/" + item.image + ".png")}
+              src={require("../../assets/styles/" + item.image + ".svg")}
               alt=""
             />
           </div>

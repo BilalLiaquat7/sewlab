@@ -7,14 +7,14 @@ const headwearProducts = [
     number: 2,
     image: "2",
   },
-  {
-    number: 3,
-    image: "3",
-  },
-  {
-    number: 4,
-    image: "4",
-  },
+  // {
+  //   number: 3,
+  //   image: "3",
+  // },
+  // {
+  //   number: 4,
+  //   image: "4",
+  // },
   // {
   //   number: 6,
   //   image: "apparel6",

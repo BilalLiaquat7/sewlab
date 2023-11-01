@@ -8,10 +8,31 @@ import Styles from "./styles";
 import side1 from "../../assets/sides/1.svg";
 import side2 from "../../assets/sides/2.svg";
 import side3 from "../../assets/sides/3.svg";
+import side4 from "../../assets/sides/4.svg";
+import side5 from "../../assets/sides/5.svg";
+import side6 from "../../assets/sides/6.svg";
 import Available1 from "../../assets/availablecolors/1.svg";
 import Available2 from "../../assets/availablecolors/2.svg";
 import Available3 from "../../assets/availablecolors/3.svg";
 import Available4 from "../../assets/availablecolors/4.svg";
+import Available5 from "../../assets/availablecolors/5.svg";
+import Available6 from "../../assets/availablecolors/6.svg";
+import Available7 from "../../assets/availablecolors/7.svg";
+import Available8 from "../../assets/availablecolors/8.svg";
+import Available9 from "../../assets/availablecolors/9.svg";
+import Available10 from "../../assets/availablecolors/10.svg";
+import Available11 from "../../assets/availablecolors/11.svg";
+import Available12 from "../../assets/availablecolors/12.svg";
+import Available13 from "../../assets/availablecolors/13.svg";
+import Available14 from "../../assets/availablecolors/14.svg";
+import Available15 from "../../assets/availablecolors/15.svg";
+import Available16 from "../../assets/availablecolors/16.svg";
+import Available17 from "../../assets/availablecolors/17.svg";
+import Available18 from "../../assets/availablecolors/18.svg";
+import Available19 from "../../assets/availablecolors/19.svg";
+import Available20 from "../../assets/availablecolors/20.svg";
+import Available21 from "../../assets/availablecolors/21.svg";
+import Available22 from "../../assets/availablecolors/22.svg";
 
 const ProductDetail = () => {
   const [selected, setSelected] = useState(false);
@@ -119,7 +140,7 @@ const ProductDetail = () => {
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-4  md:flex ">
+      <div className="md:mt-16 md:w-[95%] w-11/12 md:gap-12  md:flex ">
         <Styles handleSelection={handleSelection} />
         {selected && item == 0 ? (
           <div className="md:w-[90%] justify-start mt-5 md:flex-col md:h-[85vh] overflow-auto">
@@ -139,7 +160,7 @@ const ProductDetail = () => {
               Available Colors
             </h1>
             <div className="flex gap-2 flex-wrap">
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-4 flex-col justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available1} alt="" className="w-auto h-full" />
                 <p className="text-white w-max mt-4">Blue</p>
               </div>
@@ -212,9 +233,149 @@ const ProductDetail = () => {
             </div>
           </div>
         ) : selected && item == 1 ? (
-          <p>Under Development</p>
+          <div className="md:w-[90%] justify-start mt-5 md:flex-col md:h-[85vh] overflow-auto">
+            <h1 className="text-white text-left text-xl items-start">Sides</h1>
+            <div className="flex gap-[1%] flex-wrap items-center">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-6 my-2 px-3 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={side4} alt="" className="w-auto h-full" />
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-6 my-2 px-3 justify-center items-center rounded-lg  bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={side5} alt="" className="w-auto h-full" />
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-2 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={side6} alt="" className="w-auto h-full" />
+              </div>
+            </div>
+            <h1 className="text-white text-left text-xl items-start mt-4">
+              Available Colors
+            </h1>
+            <div className="flex gap-2 flex-wrap">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available5} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available6} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available7} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available8} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available9} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available10} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available11} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available12} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available13} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available14} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available15} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available16} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available17} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available18} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available19} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available20} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available21} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+                <img src={Available22} alt="" className="w-auto h-full" />
+                <p className="text-white w-max">White</p>
+              </div>
+            </div>
+            <h1 className="text-white text-left text-xl items-start mt-4">
+              Download design template
+            </h1>
+            <button className="bg-black text-white text-xl flex px-8 py-2 rounded-md my-2">
+              Design Template
+            </button>
+            <h1 className="text-white text-left text-xl items-start mt-4">
+              Specifications
+            </h1>
+            <div className="md:w-[100%] md:flex md:flex-col pt-4 md:gap-4">
+              <div className="flex flex-col md:flex-row w-full gap-4">
+                <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
+                  <h1 className="text-base font-bold pl-6">Material</h1>
+                  <div className="gap-3">
+                    <div className="pl-6 pt-3 flex flex-col gap-2">
+                      <ul>
+                        <li>5 Panel Cap</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
+                  <h1 className="text-base font-bold pl-6">FEATURES</h1>
+                  <div className="gap-3">
+                    <div className="pl-6 pt-3 flex flex-col gap-2">
+                      <p>
+                        Ultra soft hand, side-seamed, tightly knit, superior
+                        printability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
+                  <h1 className="text-base font-bold pl-6">LABEL</h1>
+                  <div className="gap-3">
+                    <div className="pl-6 pt-3 flex flex-col gap-2">
+                      <p>Tear-away</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex mt-4 flex-col p-3 rounded-lg self-stretch bg-black/20 bg-blend-soft-light gap-2 text-white">
+                <h1 className="text-base font-bold pl-6">CASE QUANTITY</h1>
+                <div className="gap-3">
+                  <div className="pl-6 pt-3 flex flex-col gap-2">
+                    <p>72Pcs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         ) : (
-          <div className="md:w-[90%] md:pl-[3%] hidden md:flex md:flex-col md:pt-14 md:gap-4">
+          <div className="md:w-[90%] hidden md:flex md:flex-col md:pt-14 md:gap-4">
             <div className="flex w-full gap-4">
               <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
                 <h1 className="text-base font-bold">Fundamentals</h1>

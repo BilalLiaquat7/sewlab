@@ -29,8 +29,8 @@ const Product = (props) => {
             onClick={() => handleToggleState(itemStates[item], index)}
             className={
               itemStates[item]
-                ? "flex w-48 h-48 md:w-32 md:h-32 py-6 my-2 px-4 justify-center items-center rounded-lg bg-black bg-blend-soft-light backdrop-blur-sm active:bg-black/10"
-                : "flex w-48 h-48 md:w-32 md:h-32 py-6 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm active:bg-black/10"
+                ? "flex w-48 h-48 md:w-32 md:h-32 py-6 my-2 px-4 justify-center items-center rounded-lg bg-black bg-blend-soft-light backdrop-blur-sm active:bg-black/10 hover:scale-105 duration-300"
+                : "flex w-48 h-48 md:w-32 md:h-32 py-6 my-2 px-4 justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm active:bg-black/10 hover:scale-105 duration-300"
             }
           >
             <img

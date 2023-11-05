@@ -160,21 +160,21 @@ const ProductDetail = () => {
               Available Colors
             </h1>
             <div className="flex gap-2 flex-wrap">
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-4 flex-col justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available1} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Blue</p>
+                <p className="text-white w-max">Blue</p>
               </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available2} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">White</p>
+                <p className="text-white w-max">White</p>
               </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available3} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">Heather gray</p>
+                <p className="text-white w-max">Heather gray</p>
               </div>
-              <div className="flex w-48 h-48 md:w-32 md:h-32 py-4 my-2 px-4 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
+              <div className="flex w-48 h-48 md:w-32 md:h-32 py-2 my-2 px-2 flex-col  justify-center items-center rounded-lg bg-[#00000042] bg-blend-soft-light backdrop-blur-sm  ">
                 <img src={Available4} alt="" className="w-auto h-full" />
-                <p className="text-white w-max mt-4">White</p>
+                <p className="text-white w-max">White</p>
               </div>
             </div>
             <h1 className="text-white text-left text-xl items-start mt-4">
@@ -375,8 +375,8 @@ const ProductDetail = () => {
             </div>
           </div>
         ) : (
-          <div className="md:w-[90%] hidden md:flex md:flex-col md:pt-14 md:gap-4">
-            <div className="flex w-full gap-4">
+          <div className="md:w-[90%] md:pl[3%] md:flex md:flex-col md:pt-14 md:gap-4">
+            <div className="flex flex-col md:flex-row w-full gap-4">
               <div className="flex flex-1 p-4 flex-col rounded-lg bg-black/20 bg-blend-soft-light gap-2 text-white">
                 <h1 className="text-base font-bold">Fundamentals</h1>
                 <div className="gap-3">
@@ -426,7 +426,7 @@ const ProductDetail = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col p-3 rounded-lg self-stretch bg-black/20">
+            <div className="flex flex-col mt-4 p-3 rounded-lg self-stretch bg-black/20">
               <p className="text-white">
                 <span>*</span> Lead times are approximate and vary throughout
                 the year if you have a deadline, please consult with your
